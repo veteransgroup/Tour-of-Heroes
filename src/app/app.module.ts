@@ -1,3 +1,4 @@
+import { MaterialModule } from './material/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +12,7 @@ import { HttpClientModule }    from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from '../services/in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     ),
     FormsModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
